@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch , NavLink} from "react-router-dom";
+import Header from './components/Header/Header'
+import LoaderRing from './components/LoaderRing/LoaderRing'
+import ShiningText from './components/ShiningText/ShiningText'
+import BackgroundScrolling from './components/BackgroundScrolling/BackgroundScrolling'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header/>
+        <Switch>
+          <Route exact path="/" component={ShiningText} />
+          <Route exact path="/loaderRing" component={LoaderRing} />
+          <Route exact path="/backgroundScrolling" component={BackgroundScrolling} />
+        </Switch>
     </div>
   );
 }
