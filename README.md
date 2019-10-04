@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can see live demo on https://emreayhan.github.io/css-animations
+
 ## Available Scripts
 
 In the project directory, you can run:
