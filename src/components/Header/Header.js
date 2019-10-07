@@ -13,6 +13,9 @@ const Header = () => (
           <NavLink className="navLink" to="/backgroundScrolling">
           Background Scrolling
           </NavLink> 
+          <NavLink className="navLink" to="/ghostText">
+          Ghost Text
+          </NavLink> 
         </nav>
     </div>
 );
